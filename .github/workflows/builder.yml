@@ -24,7 +24,7 @@ jobs:
       - name: Detect untrusted community PR
         if: ${{ needs.check_for_membership.outputs.check-result == 'false' }}
         run: |
-          echo "::error::ERROR: Untrusted external PR. Must be reviewed and executed by Hazelcast" 1>&2;
+          echo "::error:: ERROR: Untrusted external PR. Must be reviewed and executed by Hazelcast" 1>&2;
           exit 1
       - name: Checkout Code
         uses: actions/checkout@v4
