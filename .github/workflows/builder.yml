@@ -6,7 +6,7 @@ on:
 jobs:
   check_for_membership:
     runs-on: ubuntu-latest
-    name: Check membership of given user  
+    name: Check PR author membership
     outputs:
       check-result: ${{ steps.composite.outputs.check-result }}
     steps: 
